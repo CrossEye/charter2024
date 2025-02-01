@@ -1,14 +1,14 @@
 created: 20241109191515974
-modified: 20241111040927094
+modified: 20250201212327281
 tags: $:/tags/Global
 title: $:/_/atc/procedures/Section
 type: text/vnd.tiddlywiki
 
-\procedure Section(sect) <$link class="section-link" to={{{ [[Section]] [<sect>] +[join[]] }}} >Section <<sect>></$link>
+\procedure Section(sect) <$link class="section-link" to={{{ [[Section]] [<sect>search-replace:g:[-],[]] +[join[]] +[join[]] }}} >Section <<sect>></$link>
 
-\procedure section(sect) <$link class="section-link" to={{{ [[Section]] [<sect>] +[join[]] }}} >section <<sect>></$link>
+\procedure section(sect) <$link class="section-link" to={{{ [[Section]] [<sect>search-replace:g:[-],[]] +[join[]] }}} >section <<sect>></$link>
 
-\procedure sec(sect) <$link class="section-link" to={{{ [[Section]] [<sect>] +[join[]] }}} ><<sect>></$link>
+\procedure sec(sect) <$link class="section-link" to={{{ [[Section]] [<sect>search-replace:g:[-],[]] +[join[]] +[join[]] }}} ><<sect>></$link>
 
 
 A few simple procs for links to various sections, subsections, and sub-subsections:
@@ -16,3 +16,8 @@ A few simple procs for links to various sections, subsections, and sub-subsectio
 * `<<Section 305B>>`: <<Section 305B>>
 * `<<section 104>>`: <<section 104>>
 * `<<sec 203C(5)>>`: <<sec 203C(5) >>
+
+Note that these work with hyphens, even though those hyphens are not in the actual title we're linking to:
+
+* `<<section 1013-J(4)>>`: <<section 1013-J(4)>>
+
