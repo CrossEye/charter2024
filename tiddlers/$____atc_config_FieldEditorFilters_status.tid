@@ -1,0 +1,8 @@
+created: 20250115143334060
+list-before: $:/config/FieldEditorFilters/default
+modified: 20250201155832170
+tags: $:/tags/FieldEditorFilter
+title: $:/_/atc/config/FieldEditorFilters/status
+type: text/vnd.tiddlywiki
+
+[match[status]then[$:/_/atc/config/EditTemplateFields/Templates/status]]
