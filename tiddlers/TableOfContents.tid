@@ -1,13 +1,15 @@
 caption: Contents
 created: 20241110210840734
 list-before: 
-modified: 20241111001324894
+modified: 20250201172704217
 tags: $:/tags/SideBar
 title: TableOfContents
 type: text/vnd.tiddlywiki
 
 <div class="tc-table-of-contents">
   <ol class="tc-toc toc-expandable">
+   <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item">@@font-size:1.3em;margin-left:-.5em;<$link to="Charter"/>@@</span></li>
+   <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"></span></li>
     <$list filter="[tag[Chapter]!has[draft.of]sortan[]]">
       <$qualify name="toc-state" title={{{ [[$:/state/toc]addsuffix[-]addsuffix<currentTiddler>] }}}>
         <$let chapter={{!!chapter}}>
@@ -92,6 +94,6 @@ type: text/vnd.tiddlywiki
       </$qualify>
     </$list>
     <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"></span></li>
-    <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item"> <$link to="About"/></span></li>
+    <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item"> @@font-size:1.3em;margin-left:-.5em;<$link to="About"/>@@</span></li>
   </ol>
 </div>

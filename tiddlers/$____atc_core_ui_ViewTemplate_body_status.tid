@@ -1,0 +1,9 @@
+code-body: yes
+created: 20250201170311783
+modified: 20250201170913604
+title: $:/_/atc/core/ui/ViewTemplate/body/status
+type: text/vnd.tiddlywiki
+
+<div class={{{ [{!!status}] }}}>
+<$transclude $tiddler="$:/core/ui/ViewTemplate/body/default" $mode="block" />
+</div>

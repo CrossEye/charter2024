@@ -1,0 +1,8 @@
+created: 20250201162911329
+list-before: $:/config/ViewTemplateBodyFilters/default
+modified: 20250201171312809
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/_/atc/config/ViewTemplateBodyFilters/status
+type: text/vnd.tiddlywiki
+
+[has[status]then[$:/_/atc/core/ui/ViewTemplate/body/status]]

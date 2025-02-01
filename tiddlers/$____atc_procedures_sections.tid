@@ -1,6 +1,6 @@
 code-body: yes
 created: 20241109045339675
-modified: 20241110005819360
+modified: 20250201173237271
 tags: $:/tags/Global
 title: $:/_/atc/procedures/sections
 type: text/vnd.tiddlywiki
@@ -8,8 +8,10 @@ type: text/vnd.tiddlywiki
 \procedure sections(chapter)
 <$list filter="[tag[Section]chapter<chapter>!has[draft.of]sortan[]]" >
   <$let currentTiddler={{{ [{!!section}addprefix[Section]] }}}>
+<div class={{{ [{!!status}] }}}>
     <h3><$link class="tc-tiddlylink tc-tiddlylink-resolves">{{!!caption}}</$link></h3>
     <$transclude mode="block" />
+</div>
   </$let>
 </$list>
 \end

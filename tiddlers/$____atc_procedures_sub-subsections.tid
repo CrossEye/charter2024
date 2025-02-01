@@ -1,6 +1,6 @@
 code-body: yes
 created: 20241109060008488
-modified: 20241110005700011
+modified: 20250201173520441
 tags: $:/tags/Global
 title: $:/_/atc/procedures/sub-subsections
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
     parent ={{{ [{!!section}] [{!!subsection}] [[(]] [{!!sub-subsection}] [[)]] +[join[]] }}}
     currentTiddler={{{ [<parent>addprefix[Section]] }}}
   >
-    <div class="subsection">
+    <div class={{{ [{!!status}addprefix[subsection ]] }}}>
       <div class="ss-name"><$link>{{!!sub-subsection}}. </$link></div>
       <div class="ss-body"><$transclude mode="block"/></div>
     </div>
