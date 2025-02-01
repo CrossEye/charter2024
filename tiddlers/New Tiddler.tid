@@ -1,0 +1,13 @@
+created: 20241111044956061
+modified: 20241111050006268
+tags: 
+title: New Tiddler
+type: text/vnd.tiddlywiki
+
+<$button>Remove Chapter2
+  <$list filter="[tag[Chapter2]]">
+    <$action-sendmessage $message="tm-remove-tag" $param="Chapter2"/>
+  </$list>
+</$button>
+
+<<list-links filter:"[tag[Chapter2]]" >>

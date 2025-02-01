@@ -1,0 +1,23 @@
+created: 20241109035128759
+modified: 20241111042534006
+tags: $:/tags/Stylesheet
+title: $:/_/atc/styles/css
+type: text/vnd.tiddlywiki
+
+.subsection {margin-left: 1.5em;}
+.ss-name {float: left; padding-right: .5em;}
+.tc-subtitle {display: none;}
+.doc-icon svg {width: 1em; height: 1em; vertical-align: middle;}
+@media print {
+  h2, h3 {page-break-after: avoid;}
+  h2.tx-title {margin-bottom: .5in;}
+  h2 {margin-top: .5in;}
+  .tc-tags-wrapper {display: none;}
+  a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited, a.section-link {
+    text-decoration: none; 
+    color: #333;
+    font-weight: normal;
+  }
+}
+@page {margin: .75in;}
+@page:first {margin-top: 1.25in;}
