@@ -1,0 +1,12 @@
+created: 20250202201140294
+modified: 20250202202542626
+tags: 
+title: New Tiddler
+type: text/vnd.tiddlywiki
+
+<$button>
+<$list filter ="[tag[Chapter]] [tag[Section]] [tag[Subsection]] [tag[Sub-subsection]]">
+<$action-deletefield $field="status"/>
+</$list>
+Remove statuses
+</$button>
