@@ -1,5 +1,5 @@
 created: 20241109035128759
-modified: 20250201162431097
+modified: 20250202195634251
 tags: $:/tags/Stylesheet
 title: $:/_/atc/styles/css
 type: text/vnd.tiddlywiki
@@ -8,9 +8,6 @@ type: text/vnd.tiddlywiki
 .ss-name {float: left; padding-right: .5em;}
 .tc-subtitle {display: none;}
 .doc-icon svg {width: 1em; height: 1em; vertical-align: middle;}
-.Unconverted {background-color: #fee;}
-.Converted {background-color: #ffe;}
-.Double-checked {background-color: #efe;} 
 @media print {
   h2, h3 {page-break-after: avoid;}
   h2.tx-title {margin-bottom: .5in;}

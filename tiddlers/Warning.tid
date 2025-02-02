@@ -1,8 +1,12 @@
 created: 20250201153130448
-modified: 20250201175411475
+modified: 20250202195259202
 tags: $:/tags/AboveStory
 title: Warning
 type: text/vnd.tiddlywiki
 
-@@ ''Note'': This is the start of a conversion of the newest charter, based on a conversion of the previous charter.  Not only is it unofficial; it is also mostly incomplete.  //Do not depend on this for anything!// @@  @@background-color:#fee;border:1px solid #999;Unconverted@@ - @@background-color:#ffe;;border:1px solid #999;Converted@@ - @@background-color:#efe;;border:1px solid #999;Double-checked@@.
+@@ ''Note'': This is the start of a conversion of the newest charter, based on a conversion of the previous charter.  Not only is it unofficial; it is also mostly incomplete.  //Do not depend on this for anything!// @@  
+
+@@ ''Update'': All the content has been ported over.  It still needs a close reading for errors introduced in this manual process.@@
+
+''Key'': @@background-color:#fee;border:1px solid #999;Unconverted@@ - @@background-color:#ffe;;border:1px solid #999;Converted@@ - @@background-color:#efe;;border:1px solid #999;Double-checked@@.
 

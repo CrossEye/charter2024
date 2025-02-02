@@ -1,0 +1,15 @@
+created: 20250202195431245
+modified: 20250202200036519
+tags: $:/tags/Stylesheet
+title: Temporary Edit Styles
+type: text/vnd.tiddlywiki
+
+
+/* Show or hide using {{{ [[$:/temp/show-editing-status]] }}} */
+
+
+<% if [{$:/temp/show-editing-status}match[yes]] %>
+.Unconverted {background-color: #fee;}
+.Converted {background-color: #ffe;}
+.Double-checked {background-color: #efe;} 
+<% endif %>
