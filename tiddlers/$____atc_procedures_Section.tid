@@ -1,10 +1,10 @@
 created: 20241109191515974
-modified: 20250201212327281
+modified: 20250202160146242
 tags: $:/tags/Global
 title: $:/_/atc/procedures/Section
 type: text/vnd.tiddlywiki
 
-\procedure Section(sect) <$link class="section-link" to={{{ [[Section]] [<sect>search-replace:g:[-],[]] +[join[]] +[join[]] }}} >Section <<sect>></$link>
+\procedure Section(sect, disp:'') <$link class="section-link" to={{{ [[Section]] [<sect>search-replace:g:[-],[]] +[join[]] +[join[]] }}} >Section <<sect>></$link>
 
 \procedure section(sect) <$link class="section-link" to={{{ [[Section]] [<sect>search-replace:g:[-],[]] +[join[]] }}} >section <<sect>></$link>
 
@@ -20,4 +20,3 @@ A few simple procs for links to various sections, subsections, and sub-subsectio
 Note that these work with hyphens, even though those hyphens are not in the actual title we're linking to:
 
 * `<<section 1013-J(4)>>`: <<section 1013-J(4)>>
-
