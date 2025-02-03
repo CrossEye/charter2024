@@ -1,5 +1,5 @@
 created: 20241109035128759
-modified: 20250202195634251
+modified: 20250203013923667
 tags: $:/tags/Stylesheet
 title: $:/_/atc/styles/css
 type: text/vnd.tiddlywiki
@@ -13,11 +13,14 @@ type: text/vnd.tiddlywiki
   h2.tx-title {margin-bottom: .5in;}
   h2 {margin-top: .5in;}
   .tc-tags-wrapper {display: none;}
-  a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited, a.section-link {
+  a, a.tc-tiddlylink, a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited {
     text-decoration: none; 
-    color: #333;
-    font-weight: normal;
+    color: <<colour foreground>>;
   }
+  a.section-link {font-weight: normal;}
 }
 @page {margin: .75in;}
 @page:first {margin-top: 1.25in;}
+.tc-table-of-contents ol ol ol {
+	padding-left: 2em;
+}
