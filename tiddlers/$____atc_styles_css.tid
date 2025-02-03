@@ -1,5 +1,5 @@
 created: 20241109035128759
-modified: 20250203013923667
+modified: 20250203015037470
 tags: $:/tags/Stylesheet
 title: $:/_/atc/styles/css
 type: text/vnd.tiddlywiki
@@ -24,3 +24,4 @@ type: text/vnd.tiddlywiki
 .tc-table-of-contents ol ol ol {
 	padding-left: 2em;
 }
+.tc-tiddler-body {text-align: justify;}
