@@ -3,6 +3,7 @@ created: 20210313151647704
 description: Every link click opens or moves tiddler to the top
 modified: 20241109204338029
 name: Move to Top
+revision: 0
 tags: $:/tags/Layout
 title: $:/_/atc/layout/MoveToTop
 type: text/vnd.tiddlywiki

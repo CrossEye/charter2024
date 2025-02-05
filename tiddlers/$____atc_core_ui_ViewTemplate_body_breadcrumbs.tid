@@ -1,0 +1,33 @@
+code-body: yes
+created: 20250204150950802
+list-before: $:/core/ui/ViewTemplate/title
+modified: 20250204203530175
+tags: $:/tags/ViewTemplate
+title: $:/_/atc/core/ui/ViewTemplate/body/breadcrumbs
+
+<nav class="breadcrumbs">
+
+<% if [<currentTiddler>tag[Chapter]] [<currentTiddler>tag[Section]] [<currentTiddler>tag[Subsection]] [<currentTiddler>tag[Sub-subsection]] %>
+  <$link to="Charter" tooltip="Full Charter"/> 
+<% endif %>
+
+<% if [<currentTiddler>tag[Section]] [<currentTiddler>tag[Subsection]] [<currentTiddler>tag[Sub-subsection]] %>
+  <$let chap={{{ [tag[Chapter]chapter{!!chapter}] }}}>
+    <$link to=<<chap>> tooltip={{{ [<chap>get[caption]] }}}> > <$view tiddler=<<chap>> field="caption"/></$link>
+  </$let>
+<% endif %>
+
+<% if [<currentTiddler>tag[Subsection]] [<currentTiddler>tag[Sub-subsection]] %>
+  <$let sec={{{ [tag[Section]chapter{!!chapter}section{!!section}]}}}>
+    <$link to=<<sec>> tooltip={{{ [<sec>get[caption]] }}}> > <$view tiddler=<<sec>> field="caption"/></$link>
+  </$let>
+<% endif %>
+
+<% if [<currentTiddler>tag[Sub-subsection]]  %>
+  <$let subsec={{{ [tag[Subsection]chapter{!!chapter}section{!!section}subsection{!!subsection}] }}}>
+    <$link to=<<subsec>> tooltip={{{ [<subsec>get[caption]] }}}> > <$view tiddler=<<subsec>> field="caption"/></$link>
+  </$let>
+<% endif %>
+
+</nav>
+

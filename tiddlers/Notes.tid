@@ -1,10 +1,11 @@
 created: 20250202202709233
-modified: 20250202222050789
+modified: 20250204192002193
+revision: 0
 tags: 
 title: Notes
 type: text/vnd.tiddlywiki
 
-<$list filter="[has[scotts-note]sortan[caption]]">
+<$list filter="[has[scotts-note]!has[draft.of]sortan[caption]]">
 
 ;<$link>{{!!caption}}</$link>
 : {{!!scotts-note}}

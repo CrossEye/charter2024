@@ -1,0 +1,17 @@
+code-body: yes
+created: 20241109040904621
+modified: 20250202200513330
+tags: $:/tags/Global
+title: $:/_/atc/procedures/subsections
+type: text/vnd.tiddlywiki
+
+\procedure subsections(parent)
+<$list filter="[tag[Subsection]section<parent>!has[draft.of]sortan[]]" >
+  <$let currentTiddler={{{ [[Section]] [{!!section}] [{!!subsection}] +[join[]] }}}>
+    <div class="subsection">
+      <div class="ss-name"><$link>{{!!subsection}}. </$link></div>
+      <div class="ss-body"><$transclude mode="block"/></div>
+    </div>
+  </$let>
+</$list>
+\end

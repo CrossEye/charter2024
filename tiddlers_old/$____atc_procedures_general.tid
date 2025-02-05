@@ -1,0 +1,10 @@
+code-body: yes
+created: 20241111011429987
+modified: 20241111050954102
+tags: $:/tags/Global
+title: $:/_/atc/procedures/general
+type: text/vnd.tiddlywiki
+
+\procedure icon(_) <span class="doc-icon"><$transclude $tiddler=<<_>>/></span>
+\procedure display-link(section) <$link to=<<section>> ><$text text={{{ [{$:/info/url/full}addsuffix[#]addsuffix<section>] }}} /> </$link>
+

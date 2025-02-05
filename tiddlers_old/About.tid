@@ -1,0 +1,33 @@
+caption: About
+created: 20230326150914405
+modified: 20250203005149116
+tags: 
+title: About
+type: text/vnd.tiddlywiki
+version: 0.2.3
+
+This is an unofficial online version of Andover's [[Town Charter|https://www.andoverconnecticut.org/sites/g/files/vyhlif5346/f/uploads/andover_town_charter_2022_0.pdf]].  It is designed to make it easier to search and to share links to its many chapters, sections, subsections, and even sub-subsections.
+
+Note that the various parts of the charter can be linked to directly.  You can paste URLs like this into documents or emails:
+
+* <<display-link Chapter5 >>
+* <<display-link Section403 >>
+* <<display-link Section203C >>
+* <<display-link Section701D(12) >>
+
+You can find the link to any chapter/section/subsection by clicking on the <<icon $:/core/images/permalink-button>> icon  in its upper right.
+
+!! Credits
+
+The charter was built over many years by the citizens of Andover through various [[Charter Revision Commissions|https://www.andoverconnecticut.org/charter-revision-commission]], with help from their attorney.  The [[Town Clerk|https://www.andoverconnecticut.org/town-clerk]] maintains the document.
+
+This online version was created by [[Scott Sauyet|mailto:scott@sauyet.com]].  It involved using [[OCR|https://en.wikipedia.org/wiki/Optical_character_recognition]] to scan the official PDF charter and cutting and pasting the results into this document.  Both processes likely introduced errors.  If you spot one, please [[email Scott|mailto:scott@sauyet.com]].
+
+!! Technology
+
+{{TiddlyWiki}}
+
+!! Version
+
+{{!!version}}
+

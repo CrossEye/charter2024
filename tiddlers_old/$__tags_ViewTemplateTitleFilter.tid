@@ -1,0 +1,5 @@
+created: 20240221174508325
+list: $:/config/ViewTemplateTitleFilters/system $:/_/atc/config/ViewTemplateTitleFilters/caption $:/_/atc/config/ViewTemplateBodyFilters/status $:/config/ViewTemplateTitleFilters/default
+modified: 20250201170622409
+title: $:/tags/ViewTemplateTitleFilter
+type: text/vnd.tiddlywiki

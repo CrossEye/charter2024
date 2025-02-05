@@ -1,0 +1,99 @@
+caption: Contents
+created: 20241110210840734
+list-before: 
+modified: 20250203012305960
+tags: $:/tags/SideBar
+title: TableOfContents
+type: text/vnd.tiddlywiki
+
+<div class="tc-table-of-contents">
+  <ol class="tc-toc toc-expandable">
+   <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item">@@font-size:1.3em;margin-left:-.5em;<$link to="Charter"/>@@</span></li>
+   <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"></span></li>
+    <$list filter="[tag[Chapter]!has[draft.of]sortan[]]">
+      <$qualify name="toc-state" title={{{ [[$:/state/toc]addsuffix[-]addsuffix<currentTiddler>] }}}>
+        <$let chapter={{!!chapter}}>
+          <li class="toc-item">            
+            <$list filter="[tag[Section]chapter<chapter>!has[draft.of]limit[1]]" variable="ignore" emptyMessage="""<$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"><$link>{{!!caption}}</$link></span>""">
+              <$reveal type="nomatch" stateTitle=<<toc-state>> text="open">
+                <$button setTitle=<<toc-state>> setTo="open" class="tc-btn-invisible tc-popup-keep">
+                  <$transclude tiddler=<<toc-closed-icon>> />
+                  <$link>{{!!caption}}</$link>
+                </$button>
+              </$reveal>
+              <$reveal type="match" stateTitle=<<toc-state>> text="open">
+                <$button setTitle=<<toc-state>> setTo="close" class="tc-btn-invisible tc-popup-keep">
+                  <$transclude tiddler=<<toc-open-icon>> />
+                  <$link>{{!!caption}}</$link>
+                </$button>
+              </$reveal>
+            </$list>
+            <$reveal type="match" stateTitle=<<toc-state>> text="open">
+              <ol class="tc-toc toc-expandable">
+                <$list filter="[tag[Section]chapter<chapter>!has[draft.of]sortan[]]">
+                  <$qualify name="toc-state" title={{{ [[$:/state/toc]addsuffix[-]addsuffix<currentTiddler>] }}}>
+                    <$let section={{!!section}}>
+                      <li class="toc-item">
+                        <$list filter="[tag[Subsection]chapter<chapter>section<section>!has[draft.of]limit[1]]" variable="ignore" emptyMessage="""<$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"><$link>{{!!caption}}</$link></span>""">
+                          <$reveal type="nomatch" stateTitle=<<toc-state>> text="open">
+                            <$button setTitle=<<toc-state>> setTo="open" class="tc-btn-invisible tc-popup-keep">
+                              <$transclude tiddler=<<toc-closed-icon>> />
+                              <$link>{{!!caption}}</$link>
+                            </$button>
+                          </$reveal>
+                          <$reveal type="match" stateTitle=<<toc-state>> text="open">
+                            <$button setTitle=<<toc-state>> setTo="close" class="tc-btn-invisible tc-popup-keep">
+                              <$transclude tiddler=<<toc-open-icon>> />
+                              <$link>{{!!caption}}</$link>
+                            </$button>
+                          </$reveal>
+                        </$list>
+                        <$reveal type="match" stateTitle=<<toc-state>> text="open">
+                          <ol class="tc-toc toc-expandable">
+                            <$list filter="[tag[Subsection]chapter<chapter>section<section>!has[draft.of]sortan[]]">
+                              <$qualify name="toc-state" title={{{ [[$:/state/toc]addsuffix[-]addsuffix<currentTiddler>] }}}>
+                                <$let subsection={{!!subsection}}>
+                                  <li class="toc-item">
+                                    <$list filter="[tag[Sub-subsection]chapter<chapter>section<section>subsection<subsection>!has[draft.of]limit[1]]" variable="ignore" emptyMessage="""<$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"><$link>{{!!caption}}</$link></span>""">
+                                      <$reveal type="nomatch" stateTitle=<<toc-state>> text="open">
+                                        <$button setTitle=<<toc-state>> setTo="open" class="tc-btn-invisible tc-popup-keep">
+                                          <$transclude tiddler=<<toc-closed-icon>> />
+                                          <$link>{{!!caption}}</$link>
+                                        </$button>
+                                      </$reveal>
+                                      <$reveal type="match" stateTitle=<<toc-state>> text="open">
+                                        <$button setTitle=<<toc-state>> setTo="close" class="tc-btn-invisible tc-popup-keep">
+                                          <$transclude tiddler=<<toc-open-icon>> />
+                                          <$link>{{!!caption}}</$link>
+                                        </$button>
+                                      </$reveal>
+                                    </$list>
+                                    <$reveal type="match" stateTitle=<<toc-state>> text="open">
+                                      <ol class="tc-toc toc-expandable">
+                                        <$list filter="[tag[Sub-subsection]chapter<chapter>section<section>subsection<subsection>!has[draft.of]sortan[]]">
+                                          <$let sub-subsection={{!!sub-subsection}}>
+                                            <li class="toc-item"><$link>{{!!caption}}</$link></li>
+                                          </$let>
+                                        </$list>
+                                      </ol>
+                                    </$reveal>
+                                  </li>
+                                </$let>
+                              </$qualify>
+                            </$list>
+                          </ol>
+                        </$reveal>
+                      </li>
+                    </$let>
+                  </$qualify>
+                </$list>
+              </ol>
+           </$reveal>
+          </li>
+        </$let>
+      </$qualify>
+    </$list>
+    <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item-muted"></span></li>
+    <li class="toc-item"><$button class="tc-btn-invisible">{{$:/core/images/blank}}</$button><span class="toc-item"> @@font-size:1.3em;margin-left:-.5em;<$link to="About"/>@@</span></li>
+  </ol>
+</div>

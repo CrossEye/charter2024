@@ -1,0 +1,15 @@
+code-body: yes
+created: 20241109045339675
+modified: 20250202200435607
+tags: $:/tags/Global
+title: $:/_/atc/procedures/sections
+type: text/vnd.tiddlywiki
+
+\procedure sections(chapter)
+<$list filter="[tag[Section]chapter<chapter>!has[draft.of]sortan[]]" >
+  <$let currentTiddler={{{ [{!!section}addprefix[Section]] }}}>
+    <h3><$link class="tc-tiddlylink tc-tiddlylink-resolves">{{!!caption}}</$link></h3>
+    <$transclude mode="block" />
+  </$let>
+</$list>
+\end
