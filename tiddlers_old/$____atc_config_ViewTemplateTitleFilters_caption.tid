@@ -1,7 +1,0 @@
-created: 20230830142553245
-modified: 20241109135358280
-tags: $:/tags/ViewTemplateTitleFilter
-title: $:/_/atc/config/ViewTemplateTitleFilters/caption
-type: text/vnd.tiddlywiki
-
-[<currentTiddler>has[caption]then[$:/_/atc/core/ui/ViewTemplate/title/caption]]

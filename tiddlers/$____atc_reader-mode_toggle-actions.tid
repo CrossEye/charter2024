@@ -1,0 +1,9 @@
+created: 20250205153402239
+key: ((toggle-reader-mode))
+modified: 20250205153510276
+revision: 0
+tags: $:/tags/KeyboardShortcut
+title: $:/_/atc/reader-mode/toggle-actions
+type: text/vnd.tiddlywiki
+
+{{$:/_/atc/reader-mode/switch-actions}}
