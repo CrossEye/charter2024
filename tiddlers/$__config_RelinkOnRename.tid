@@ -1,7 +1,7 @@
 created: 20241109162024260
-modified: 20241109162024260
+modified: 20250206162510415
 revision: 0
 title: $:/config/RelinkOnRename
 type: text/vnd.tiddlywiki
 
-yes
+no

@@ -1,33 +1,35 @@
 code-body: yes
-created: 20250204150950802
+created: 20250206162028792
 list-before: $:/core/ui/ViewTemplate/title
-modified: 20250204203530175
+modified: 20250206212853914
 tags: $:/tags/ViewTemplate
 title: $:/_/atc/core/ui/ViewTemplate/body/breadcrumbs
 
 <nav class="breadcrumbs">
 
 <% if [<currentTiddler>tag[Chapter]] [<currentTiddler>tag[Section]] [<currentTiddler>tag[Subsection]] [<currentTiddler>tag[Sub-subsection]] %>
-  <$link to="Charter" tooltip="Full Charter"/> 
+  <div class="crumb"><$link to="Charter" tooltip="Full Charter"/></div> 
 <% endif %>
 
 <% if [<currentTiddler>tag[Section]] [<currentTiddler>tag[Subsection]] [<currentTiddler>tag[Sub-subsection]] %>
   <$let chap={{{ [tag[Chapter]chapter{!!chapter}] }}}>
-    <$link to=<<chap>> tooltip={{{ [<chap>get[caption]] }}}> > <$view tiddler=<<chap>> field="caption"/></$link>
+    <div class="sep">&gt;</div>
+    <div class="crumb"><$link to=<<chap>> tooltip={{{ [<chap>get[caption]] }}}><$text text={{{ [<chap>get[caption]removeprefix[Chapter ]] }}} /></$link></div>
   </$let>
 <% endif %>
 
 <% if [<currentTiddler>tag[Subsection]] [<currentTiddler>tag[Sub-subsection]] %>
   <$let sec={{{ [tag[Section]chapter{!!chapter}section{!!section}]}}}>
-    <$link to=<<sec>> tooltip={{{ [<sec>get[caption]] }}}> > <$view tiddler=<<sec>> field="caption"/></$link>
+    <div class="sep">&gt;</div>
+    <div class="crumb"><$link to=<<sec>> tooltip={{{ [<sec>get[caption]] }}}><$text text={{{ [<sec>get[caption]removeprefix[Section ]] }}} /></$link></div>
   </$let>
 <% endif %>
 
 <% if [<currentTiddler>tag[Sub-subsection]]  %>
   <$let subsec={{{ [tag[Subsection]chapter{!!chapter}section{!!section}subsection{!!subsection}] }}}>
-    <$link to=<<subsec>> tooltip={{{ [<subsec>get[caption]] }}}> > <$view tiddler=<<subsec>> field="caption"/></$link>
+    <div class="sep">&gt;</div>
+    <div class="crumb"><$link to=<<subsec>> tooltip={{{ [<subsec>get[caption]] }}}><$text text={{{ [<subsec>get[caption]removeprefix[Section ]addprefix[Subsection ]] }}} /></$link></div>
   </$let>
 <% endif %>
 
 </nav>
-

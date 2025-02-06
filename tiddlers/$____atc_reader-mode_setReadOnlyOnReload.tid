@@ -1,6 +1,7 @@
 code-body: yes
 created: 20241109162018975
-modified: 20250205235136692
+modified: 20250206230634112
+revision: 0
 tags: $:/tags/StartupAction
 title: $:/_/atc/reader-mode/setReadOnlyOnReload
 type: text/vnd.tiddlywiki

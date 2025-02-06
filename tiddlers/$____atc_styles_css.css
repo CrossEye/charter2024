@@ -5,13 +5,16 @@
 
 nav.breadcrumbs {
   opacity: 50%; 
-  a {
-    display: inline-block;
-    max-width: 40%;
-    height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 0;
+  div.sep {padding: 0 .5em; min-width: 0;}
+  div.crumb {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    min-width: 0;
   }
 }
 
