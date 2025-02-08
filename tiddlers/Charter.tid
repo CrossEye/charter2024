@@ -1,10 +1,18 @@
 caption: Andover Town Charter, November 2024
 created: 20241109050813307
-modified: 20250201172254201
+modified: 20250207162547485
 revision: 0
 tags: 
 title: Charter
 type: text/vnd.tiddlywiki
+
+<div class="print-title">
+<h1>Town of Andover</h1>
+<h1>Connecticut Town Charter</h1>
+<h1>November, 2024</h1>
+</div>
+
+{{Print TOC}}
 
 <<chapter 1>>
 <<chapter 2>>
@@ -16,3 +24,5 @@ type: text/vnd.tiddlywiki
 <<chapter 8>>
 <<chapter 9>>
 <<chapter 10>>
+
+

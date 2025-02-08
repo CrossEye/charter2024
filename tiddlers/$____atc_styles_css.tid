@@ -1,0 +1,69 @@
+code-body: yes
+created: 20241109035128759
+modified: 20250208140306473
+revision: 0
+tags: $:/tags/Stylesheet
+title: $:/_/atc/styles/css
+type: text/vnd.tiddlywiki
+
+.subsection {margin-left: 1.5em;}
+.ss-name {float: left; padding-right: .5em;}
+.tc-subtitle {display: none;}
+.doc-icon svg {width: 1em; height: 1em; vertical-align: middle;}
+.toc-item button+span a {margin-left: .23em;}  /*lining up slightly weird offset*/ 
+.tc-table-of-contents ol ol ol {
+	padding-left: 2em;
+}
+
+nav.breadcrumbs {
+  opacity: 50%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 0;
+  div.sep {padding: 0 .5em; min-width: 0;}
+  div.crumb {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; min-width: 0;}
+}
+
+.print-title {display: none;}
+.print-toc {display: none;}
+@media print {
+  .print-toc {
+    display: block;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    td, th {border: none;}
+  }
+  p:has(>div.chapter) {
+    break-before: page;
+  }
+  p:has(>div.chapter.Chapter1) {break-before: auto;}
+  h2, h3 {page-break-after: avoid;}
+  h2.tx-title {margin-bottom: .5in;}
+  h2 {margin-top: .5in;}
+  .tc-tags-wrapper {display: none;}
+  .tc-tiddler-body {text-align: justify;}
+  a, a.tc-tiddlylink, a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited {
+    text-decoration: none; 
+    color: <<colour foreground>>;
+  }
+  a.section-link {font-weight: normal;}
+  nav.breadcrumbs {display: none;}
+  .print-title {
+    margin-top: 1em;
+    display: block;
+    h1 {text-align: center; margin-top: -1em;}
+    h1:first-child {margin-top: 0;}
+  }
+  [data-tiddler-title="Charter"] .tc-title {display: none;}
+  .tc-story-river {margin-left: .125in; margin-right: .125in;}
+}
+@page {
+  size: 8.5in 11in; 
+  margin: .75in;
+}
+@page {@bottom-center {content: counter(page);}}
+@page:first {margin-top: 1in;}
+
+

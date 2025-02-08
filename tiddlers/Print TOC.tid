@@ -1,0 +1,15 @@
+created: 20250207155726878
+modified: 20250207165231337
+tags: 
+title: Print TOC
+
+<table class="print-toc">
+<$list filter=[tag[Chapter]sortan[]] >
+<tr><td colspan="3">{{!!caption}}</td></tr>
+<tr class="spacer"><td colspan="2">&nbsp;</td></tr>
+<$list filter="[tag[Section]chapter{!!chapter}]">
+<tr><td>{{!!caption}}.</td><td style="width:4em;">{{!!print-pages}}</td></tr>
+</$list>
+<tr class="spacer"><td colspan="2">&nbsp;</td></tr>
+</$list>
+</table>
